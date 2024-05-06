@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please take a moment to fill out our survey form. Your feedback is invaluable and will help us improve our services. Thank you for your time</p>
+  <form id="survey-form">
+
+    <fieldset>
+<label for="name" id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"/></label>
+<label for="email" id="email-label">Email <input id="email" type="email" required placeholder="Enter your email"/></label>
+<label for="number" id="number-label">Number <input id="number" type="number" min="7" max="99" required placeholder="Enter your number"/></label>
+
+<label for="dropdown">What is your gender?</label>
+    <select id="dropdown" name="gender" required>
+      <option value="">Please select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    
+</fieldset>
+
+    <fieldset>
+      <legend>How often do you exercise?</legend>
+      <label for="exercise-dia"><input id="exercise-dia" type="radio" name="exercise" value="daily" class="inline" > Daily</label>
+      <label for="exercise-wee"><input id="exercise-wee" type="radio" name="exercise" value="weekly" class="inline"> Weekly</label>
+      <label for="exercise-mon"><input id="exercise-mon" type="radio" name="exercise" value="monthly" class="inline"> Monthly</label>
+      <label for="exercise-rar"><input  id="exercise-rar" type="radio" name="exercise" value="rarely" class="inline"> Rarely</label>
+     </fieldset>
+
+<fieldset>
+
+  <legend>What would you like to see improved? <span>(Check all that apply)</span> </legend>
+<label for="front-end-projects"><input id="front-end-projects" type="checkbox" value="projects" class="inline"/> Front-end Projects</label>
+<label for="back-end-projects"><input id="front-end-projects" type="checkbox" value="projects" class="inline"/> Back-end Projects</label>
+<label for="data-visualization"><input id="data-visualization" type="checkbox" value="projects" class="inline"/> Data Visualization</label>
+<label for="challendes"><input id="challenges" type="checkbox" value="projects" class="inline"/> Challenges</label>
+<label for="open-source-community"><input id="open-source-community" type="checkbox" value="projects" class="inline"/> Open Source Community
+</label>
+<label for="feedback">Any additional comments or feedback?</label>
+    <textarea id="feedback" name="feedback" rows="6" cols="30"></textarea>
+</fieldset>
+
+    <button id="submit" type="submit" value="Submit">Submit</button>
+  </form>
+</body>
+</html>  
